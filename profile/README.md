@@ -1,4 +1,4 @@
-# Institute for Integrated Circuits (IIC) at the Johannes Kepler University Linz (JKU)
+# Institute for Integrated Circuits and Quantum Computing (IICQC) at the Johannes Kepler University Linz (JKU)
 
 Find here our work on
 
