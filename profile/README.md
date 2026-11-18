@@ -4,7 +4,7 @@
 
 # Institute for Integrated Circuits and Quantum Computing (IICQC) at the Johannes Kepler University Linz (JKU)
 
-We build open-source tools, chip design templates with tutorials, course material and complete chip designs for the open-source PDKs from IHP, SkyWater and GlobalFoundries. Everything here is regression-tested against the latest tool versions. Visit us [here](https://www.jku.at/en/institute-for-integrated-circuits-and-quantum-computing/).
+We build open-source tools, chip design templates with tutorials, course material and complete chip designs for the open-source PDKs from IHP, SkyWater and GlobalFoundries. Our tools, templates, courses and chip designs are regression-tested against the latest tool versions. Visit us [here](https://www.jku.at/en/institute-for-integrated-circuits-and-quantum-computing/).
 
 **[Tools](#tools)** · **[Templates & Tutorials](#templates--tutorials)** · **[Courses](#courses)** · **[Open Chip Projects](#open-chip-projects)** · **[Chip Gallery](#chip-gallery)** · **[Regression Tests](#regression-tests)** · **[More](#more)**
 
@@ -14,9 +14,9 @@ We build open-source tools, chip design templates with tutorials, course materia
 | ---- | ------------ | ----- |
 | [**IIC-OSIC-TOOLS**](https://github.com/iic-jku/IIC-OSIC-TOOLS) | All-in-one Docker image for open-source analog and digital chip design with the SKY130, GF180 and IHP 130 nm PDKs, native on AMD64 and ARM64 | [Docker Hub](https://hub.docker.com/r/hpretl/iic-osic-tools) · [Zenodo](https://doi.org/10.5281/zenodo.14387234) |
 | [**KPEX**](https://github.com/iic-jku/klayout-pex) | Parasitic extraction for KLayout, with plugins for the FEM field solvers [gmsh](https://github.com/iic-jku/klayout-pex-plugin-gmsh), [Palace](https://github.com/iic-jku/klayout-pex-plugin-palace), [Elmer](https://github.com/iic-jku/klayout-pex-plugin-elmer) and [KQCircuits](https://github.com/iic-jku/klayout-pex-plugin-kqcircuits) | [Docs](https://iic-jku.github.io/klayout-pex-website/) · [PyPI](https://pypi.org/project/klayout-pex/) · [Zenodo](https://doi.org/10.5281/zenodo.17822625) |
-| [**KLayout Productivity Suite**](https://github.com/iic-jku/klayout-productivity-suite) | KLayout plugins for aligning, moving, pins, layer shortcuts, auto backup, library management, netlist import and PDF/SVG export, installed as one package from the KLayout package manager | [Docs](https://iic-jku.github.io/klayout-productivity-suite/) · [Zenodo](https://doi.org/10.5281/zenodo.17822158) |
+| [**KLayout Productivity Suite**](https://github.com/iic-jku/klayout-productivity-suite) | KLayout plugins for aligning and moving shapes, aligning pins, layer visibility shortcuts, automatic backups, a library manager, netlist import and PDF/SVG export, installed as one package from the KLayout package manager | [Docs](https://iic-jku.github.io/klayout-productivity-suite/) · [Zenodo](https://doi.org/10.5281/zenodo.17822158) |
 | [**snp2le**](https://github.com/iic-jku/snp2le) | Converts Touchstone S-parameter files into lumped-element netlists for ngspice, VACASK and Xyce (GUI and CLI) | [PyPI](https://pypi.org/project/snp2le/) · [Zenodo](https://doi.org/10.5281/zenodo.21189545) |
-| [**chipify**](https://github.com/iic-jku/chipify) | Automates mismatch and Monte-Carlo simulations, parameter sweeps and yield analysis with Xschem and ngspice (GUI and CLI) | [chipify.io](https://chipify.io/) · [PyPI](https://pypi.org/project/chipify/) · [Examples](https://github.com/iic-jku/chipify-examples) |
+| [**chipify**](https://github.com/iic-jku/chipify) | Automates mismatch and Monte Carlo simulations, parameter sweeps and yield analysis with Xschem and ngspice (GUI and CLI) | [chipify.io](https://chipify.io/) · [PyPI](https://pypi.org/project/chipify/) · [Examples](https://github.com/iic-jku/chipify-examples) |
 | [**PREP-IC**](https://github.com/iic-jku/prep-ic) | Pinout, Ring and Early floorplan Planner for ICs: plans pad rings and pinouts, sizes the die from the pads and macros, and exports the LibreLane pad ring configuration (GUI and Python API) | [PyPI](https://pypi.org/project/prep-ic/) · [Zenodo](https://doi.org/10.5281/zenodo.23963620) |
 
 ## Templates & Tutorials
@@ -80,7 +80,7 @@ When open-pdks-regression-tests PR #12 is merged, replace its status cell with:
 
 | Repository | What runs | Trigger | Branch | IIC-OSIC-TOOLS image | Status |
 | ---------- | --------- | ------- | ------ | -------------------- | ------ |
-| [IIC-OSIC-TOOLS](https://github.com/iic-jku/IIC-OSIC-TOOLS) | Nightly image build with the latest tool versions and 48 integration tests on AMD64 and ARM64 (see [below](#iic-osic-tools-nightly-regression)) | Sunday to Thursday at 23:00 UTC, skipped when nothing changed since the last green night (at least every 6 days), manual | `next_release` | `nightly`, built in the same run | [![nightly](https://img.shields.io/github/actions/workflow/status/iic-jku/IIC-OSIC-TOOLS/nightly.yaml?branch=main&label=nightly)](https://github.com/iic-jku/IIC-OSIC-TOOLS/actions/workflows/nightly.yaml) |
+| [IIC-OSIC-TOOLS](https://github.com/iic-jku/IIC-OSIC-TOOLS) | Nightly image build with the latest tool versions and 48 integration tests on AMD64 and ARM64 (see [below](#iic-osic-tools-nightly-regression)) | Sunday to Thursday at 23:00 UTC, skipped when nothing changed since the last green night, but at least every 6 days, manual | `next_release` | `nightly`, built in the same run | [![nightly](https://img.shields.io/github/actions/workflow/status/iic-jku/IIC-OSIC-TOOLS/nightly.yaml?branch=main&label=nightly)](https://github.com/iic-jku/IIC-OSIC-TOOLS/actions/workflows/nightly.yaml) |
 | [open-pdks-regression-tests](https://github.com/iic-jku/open-pdks-regression-tests) | One workflow per PDK (ihp-sg13g2, ihp-sg13cmos5l, gf180mcuD, sky130A): `make regression` (DRC, LVS and PEX), then `make pex-bench` | Push and pull request (documentation changes excepted), manual | `main` | `nightly` (selectable in a manual run) | *(coming with [#12](https://github.com/iic-jku/open-pdks-regression-tests/pull/12))* |
 | [ihp-sg13g2-ams-chip-template](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template) | `make regression`: full chip build with DRC, LVS and PEX | Daily at 02:00 UTC when `main` changed in the last 25 hours, manual | `main` | `latest` | [![regression](https://img.shields.io/github/actions/workflow/status/iic-jku/ihp-sg13g2-ams-chip-template/regression.yml?branch=main&label=regression)](https://github.com/iic-jku/ihp-sg13g2-ams-chip-template/actions/workflows/regression.yml) |
 | [ihp-sg13cmos5l-ams-chip-template](https://github.com/iic-jku/ihp-sg13cmos5l-ams-chip-template) | `make regression`: full chip build with DRC, LVS and PEX | Daily at 02:00 UTC when `main` changed in the last 25 hours, manual | `main` | `latest` | [![regression](https://img.shields.io/github/actions/workflow/status/iic-jku/ihp-sg13cmos5l-ams-chip-template/regression.yml?branch=main&label=regression)](https://github.com/iic-jku/ihp-sg13cmos5l-ams-chip-template/actions/workflows/regression.yml) |
@@ -97,7 +97,7 @@ When open-pdks-regression-tests PR #12 is merged, replace its status cell with:
 
 ### IIC-OSIC-TOOLS Nightly Regression
 
-Every night from Sunday to Thursday, IIC-OSIC-TOOLS builds its `next_release` branch with the latest tool versions as `ghcr.io/iic-jku/iic-osic-tools:nightly` and runs the [48 integration tests](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/next_release/_tests/TESTS.md) on AMD64 and ARM64. These tests clone our other repositories at the branch given here:
+Every night from Sunday to Thursday, IIC-OSIC-TOOLS builds its `next_release` branch with the latest tool versions as `ghcr.io/iic-jku/iic-osic-tools:nightly` and runs the [48 integration tests](https://github.com/iic-jku/IIC-OSIC-TOOLS/blob/next_release/_tests/TESTS.md) on AMD64 and ARM64. These tests clone our other repositories on the branch given here:
 
 | Repository | Branch | Tests |
 | ---------- | ------ | ----- |
@@ -106,8 +106,8 @@ Every night from Sunday to Thursday, IIC-OSIC-TOOLS builds its `next_release` br
 | [TinyWhisper](https://github.com/iic-jku/TinyWhisper) | `next_release` | 28: `make regression` |
 | [SPARX](https://github.com/iic-jku/SG13CMOS_SPARX) | `next_release` | 22: `make regression` |
 | [VLSI Design](https://github.com/iic-jku/vlsi-design) | `next_release` | 49: course examples (lint, simulation, synthesis, STA, DFT, LibreLane) |
-| [Analog Circuit Design](https://github.com/iic-jku/analog-circuit-design) | `main` | 21: xschem/ngspice simulation testbenches |
-| [open-pdks-regression-tests](https://github.com/iic-jku/open-pdks-regression-tests) | `main` | 26, 31, 47, 48: DRC, LVS and PEX for each PDK, 35: PEX bench |
+| [Analog Circuit Design](https://github.com/iic-jku/analog-circuit-design) | `main` | 21: Xschem/ngspice simulation testbenches |
+| [open-pdks-regression-tests](https://github.com/iic-jku/open-pdks-regression-tests) | `main` | 26, 31, 47 and 48: DRC, LVS and PEX, one PDK each. 35: PEX bench for all PDKs |
 
 The PDK coverage of the nightly regression, by test ID:
 
