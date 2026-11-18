@@ -1,8 +1,12 @@
+<a href="https://www.jku.at/en/institute-for-integrated-circuits-and-quantum-computing/">
+  <img src="https://raw.githubusercontent.com/iic-jku/.github/main/profile/fig/iic-jku.svg" alt="Johannes Kepler University: Institute for Integrated Circuits and Quantum Computing" width="50%"/>
+</a>
+
 # Institute for Integrated Circuits and Quantum Computing (IICQC) at the Johannes Kepler University Linz (JKU)
 
 We build open-source tools, chip design templates with tutorials, course material and complete chip designs for the open-source PDKs from IHP, SkyWater and GlobalFoundries. Everything here is regression-tested against the latest tool versions. Visit us [here](https://www.jku.at/en/institute-for-integrated-circuits-and-quantum-computing/).
 
-**[Tools](#tools)** · **[Templates & Tutorials](#templates--tutorials)** · **[Courses](#courses)** · **[Open Chip Projects](#open-chip-projects)** · **[Chip Gallery](#chip-gallery)** · **[Regression Tests](#regression-tests)** · **[More](#more)** · **[Acknowledgements](#acknowledgements)**
+**[Tools](#tools)** · **[Templates & Tutorials](#templates--tutorials)** · **[Courses](#courses)** · **[Open Chip Projects](#open-chip-projects)** · **[Chip Gallery](#chip-gallery)** · **[Regression Tests](#regression-tests)** · **[More](#more)**
 
 ## Tools
 
@@ -131,22 +135,3 @@ Further tests cover PDK-independent tools, such as the Python packages, the RISC
 - [iic-circdia](https://github.com/iic-jku/iic-circdia): our LaTeX package for circuit diagrams
 
 _Most of our later work on quantum computing can be found at [cda-tum](https://github.com/cda-tum)._
-
-## Acknowledgements
-
-This work is funded by the JKU/SAL [IWS Lab](https://research.jku.at/de/projects/jku-lit-sal-intelligent-wireless-systems-lab-iws-lab/), a collaboration of [Johannes Kepler University](https://jku.at) and [Silicon Austria Labs](https://silicon-austria-labs.com).
-
-<table width="100%">
-  <tr>
-    <td align="left" width="50%">
-      <a href="https://www.jku.at/en/institute-for-integrated-circuits-and-quantum-computing/" target="_blank">
-        <img src="https://raw.githubusercontent.com/iic-jku/.github/main/profile/fig/funding/iic-jku.svg" alt="Johannes Kepler University: Institute for Integrated Circuits and Quantum Computing" width="94%"/>
-      </a>
-    </td>
-    <td align="right" width="50%">
-      <a href="https://silicon-austria-labs.com" target="_blank">
-        <img src="https://raw.githubusercontent.com/iic-jku/.github/main/profile/fig/funding/silicon-austria-labs-logo.svg" alt="Silicon Austria Labs" width="94%"/>
-      </a>
-    </td>
-  </tr>
-</table>
