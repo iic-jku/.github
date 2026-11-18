@@ -17,7 +17,7 @@ We build open-source tools, chip design templates with tutorials, course materia
 | [**KLayout Productivity Suite**](https://github.com/iic-jku/klayout-productivity-suite) | KLayout plugins for aligning, moving, pins, layer shortcuts, auto backup, library management, netlist import and PDF/SVG export, installed as one package from the KLayout package manager | [Docs](https://iic-jku.github.io/klayout-productivity-suite/) · [Zenodo](https://doi.org/10.5281/zenodo.17822158) |
 | [**snp2le**](https://github.com/iic-jku/snp2le) | Converts Touchstone S-parameter files into lumped-element netlists for ngspice, VACASK and Xyce (GUI and CLI) | [PyPI](https://pypi.org/project/snp2le/) · [Zenodo](https://doi.org/10.5281/zenodo.21189545) |
 | [**chipify**](https://github.com/iic-jku/chipify) | Automates mismatch and Monte-Carlo simulations, parameter sweeps and yield analysis with Xschem and ngspice (GUI and CLI) | [chipify.io](https://chipify.io/) · [PyPI](https://pypi.org/project/chipify/) · [Examples](https://github.com/iic-jku/chipify-examples) |
-| [**PREP-IC**](https://github.com/iic-jku/prep-ic) | Pinout, Ring and Early floorplan Planner for ICs: plans pad rings and pinouts with live die sizing and RF/GSG pad groups (GUI and Python API) | [PyPI](https://pypi.org/project/prep-ic/) · [Zenodo](https://doi.org/10.5281/zenodo.23963620) |
+| [**PREP-IC**](https://github.com/iic-jku/prep-ic) | Pinout, Ring and Early floorplan Planner for ICs: plans pad rings and pinouts, sizes the die from the pads and macros, and exports the LibreLane pad ring configuration (GUI and Python API) | [PyPI](https://pypi.org/project/prep-ic/) · [Zenodo](https://doi.org/10.5281/zenodo.23963620) |
 
 ## Templates & Tutorials
 
